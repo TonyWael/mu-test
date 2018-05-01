@@ -3,10 +3,8 @@ environments:
 - name: production
 service:
   port: 80
-  healthEndpoint: /
   pathPatterns:
   - /*
   pipeline:
     source:
-      provider: GitHub
-      repo: TonyWael/mu-test
+      repo: ssh://git@pnl.gitlab.schubergphilis.com:2238/twaelabidi/mu-test.git
