@@ -1,10 +1,13 @@
 environments:
+- name: tests
 - name: acceptance
 - name: production
 service:
   port: 80
+  healthEndpoint: /
   pathPatterns:
   - /*
   pipeline:
     source:
-      repo: ssh://git@pnl.gitlab.schubergphilis.com:2238/twaelabidi/mu-test.git
+      provider: GitHub
+      repo: TonyWael/mu-test
