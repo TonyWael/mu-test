@@ -1,5 +1,4 @@
 environments:
-- name: tests
 - name: acceptance
 - name: production
 service:
